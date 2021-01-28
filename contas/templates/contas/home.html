@@ -1,8 +1,39 @@
 <!DOCTYPE html>
-<html>
-    <title>Home - Controle Gastos</title>
-
+<html lang="pt-br">
+    <head>
+        <title>Home - Controle Gastos</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
     <body>
-        <h2>Bem vindo - {{ nome }}</h2>
+
+        <div class="container mt-5">
+            <h2>Bem vindo - {{ nome }}</h2>
+            <hr>
+
+            <div class="card text-center shadow">
+                <div class="card-header h2">
+                    Contas
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Sistema Simples de Controle de Gastos</h5>
+                    <p class="card-text">Fundamentos de Django 3 -> Python 3.</p>
+                    <a href="{% url 'listagem' %}" class="btn btn-outline-primary text-right">Listagem de Contas</a>
+                </div>
+            </div>
+
+            <div class="row justify-content-center text-center">
+
+                <div class="card mt-5 mr-5 col-md-6 shadow" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Nova Transação</h5>
+                        <p class="card-text">Insira um Nova Transação - Conta.</p>
+                        <a href="{% url 'nova' %}" class="btn btn-outline-success">Nova Transação</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
     </body>
 </html>
