@@ -2,7 +2,7 @@
 Pequeno CRUD - Controle de Gastos - Django Fundamentos - Python 3
 
 ## Instale e Rode o Virtualenv
--- virtualenv venv
+-- virtualenv venv <br>
 -- source venv/bin/activate
 
 ## Rode o arquivo requirements.txt
