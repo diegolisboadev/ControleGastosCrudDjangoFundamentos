@@ -1,16 +1,23 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang='pt-br'>
     <head>
         <title>Listagem - Controle Gastos</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" src="{% static 'css/style.min.css' %}">
+        <style>
+            body {
+                background-color: #dededede !important;
+            }   
+        </style>
     </head>
     <body class="container mt-5">
         <h2>Transações</h2>
         <hr>
         <br>
 
-        <table class="table table-responsive">
-            <tr>
+        <table class="table table-responsive table-striped table-dark">
+            <tr class="text-center">
                 <th>#</th>
                 <th>Descrição</th>
                 <th>Valor</th>
@@ -38,7 +45,7 @@
         </table>
 
         <div class="container">
-            <div class="text-right">
+            <div class="float-right">
                 <a href="{% url 'nova' %}" class="btn btn-success" title="Nova Transação">Nova Transação</a>
             </div>
         </div>
